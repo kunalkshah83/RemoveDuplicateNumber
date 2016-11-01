@@ -14,7 +14,7 @@ public class DeDupTest{
 	@Test
 	public void test_empty() {
 	    int[] orig = {};
-	    assertArrayEquals(orig, DeDup.removeDuplicateWithSameOrder(orig.clone()));
+	    assertArrayEquals(null, DeDup.removeDuplicateWithSameOrder(orig.clone()));
 	}
 
 	@Test

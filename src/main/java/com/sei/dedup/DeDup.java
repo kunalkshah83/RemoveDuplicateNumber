@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class DeDup {
@@ -77,7 +78,7 @@ public class DeDup {
 	}
 
 	public static Integer[] deleteDuplicate(Integer[] elementsArray) {
-		return new HashSet<Integer>(Arrays.asList(elementsArray)).toArray(new Integer[0]);
+		return new LinkedHashSet<Integer>(Arrays.asList(elementsArray)).toArray(new Integer[0]);
 	}
 
 }
